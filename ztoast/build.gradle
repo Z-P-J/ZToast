@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    publish {
+        artifactId = 'ZToast'
+        userOrg = 'z-p-j'
+        groupId = 'com.zpj.toast'
+        publishVersion = '1.0.0'
+        desc = 'A Android toast library.'
+        website = 'https://github.com/Z-P-J/ZToast'
+        licences = ['Apache-2.0']
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.zpj.utils:ZUtils:1.0.3'
+}
