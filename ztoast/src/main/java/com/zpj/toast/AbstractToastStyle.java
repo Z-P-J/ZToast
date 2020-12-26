@@ -8,7 +8,7 @@ public abstract class AbstractToastStyle {
 
 
 
-    View onCreate(Context context, String text, ZToast.ToastType type) {
+    View onCreate(Context context, String text, @ZToast.Type int type) {
         View rootView = LayoutInflater.from(context).inflate(getLayoutId(), null, false);
         onCreateView(context, rootView, text, type);
         return rootView;
@@ -20,6 +20,6 @@ public abstract class AbstractToastStyle {
 
     protected abstract int getLayoutId();
 
-    protected abstract void onCreateView(Context context, View rootView, String text, ZToast.ToastType type);
+    protected abstract void onCreateView(Context context, View rootView, String text, @ZToast.Type int type);
 
 }

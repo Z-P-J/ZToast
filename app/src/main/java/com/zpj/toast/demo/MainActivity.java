@@ -2,9 +2,11 @@ package com.zpj.toast.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.zpj.toast.ZToast;
 
@@ -42,6 +44,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ZToast.warning("警告11111111111111111111111111111111111111111111111111111111111111111111111111111111111111");
+            }
+        });
+
+        findViewById(R.id.btn_custom).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        ZToast.with("1111111111111111111111")
+                                .success()
+                                .setGravity(Gravity.TOP)
+                                .setDuration(Toast.LENGTH_LONG)
+                                .show();
+                    }
+                }).start();
             }
         });
 

@@ -15,7 +15,7 @@ android {
         artifactId = 'ZToast'
         userOrg = 'z-p-j'
         groupId = 'com.zpj.toast'
-        publishVersion = '1.0.0'
+        publishVersion = '1.0.1'
         desc = 'A Android toast library.'
         website = 'https://github.com/Z-P-J/ZToast'
         licences = ['Apache-2.0']
@@ -26,4 +26,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.zpj.utils:ZUtils:1.0.3'
+    implementation 'com.android.support:support-compat:28.0.0'
 }

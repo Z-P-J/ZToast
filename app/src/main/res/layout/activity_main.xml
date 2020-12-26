@@ -34,6 +34,14 @@
       android:text="警告消息"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      />
+
+  <Button
+      android:id="@+id/btn_custom"
+      android:text="自定义消息"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:layout_gravity="center_horizontal|bottom"
       />
 
