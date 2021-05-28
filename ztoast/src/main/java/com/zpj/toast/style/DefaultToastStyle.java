@@ -7,7 +7,6 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.util.TypedValue;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zpj.toast.AbstractToastStyle;
@@ -21,7 +20,6 @@ public class DefaultToastStyle extends AbstractToastStyle {
     private int textColor = Color.BLACK;
 
     private float textSize = 12;
-    private boolean textBold;
 
     @Override
     public int getLayoutId() {
@@ -82,8 +80,4 @@ public class DefaultToastStyle extends AbstractToastStyle {
         return this;
     }
 
-    public DefaultToastStyle setTextBold(boolean textBold) {
-        this.textBold = textBold;
-        return this;
-    }
 }
