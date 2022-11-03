@@ -3,7 +3,7 @@ package com.zpj.toast;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.widget.Toast;
